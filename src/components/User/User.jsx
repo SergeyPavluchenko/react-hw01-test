@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 
-import { Profile } from './Profile';
+import { Profile } from '../Profile/Profile';
+import { UserStyled } from './User.styled';
 
 export const User = ({ userData }) => {
   return (
-    <div>
+    <UserStyled>
       <Profile item={userData} />
-    </div>
+    </UserStyled>
   );
 };
 
